@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import "_mixins.scss";
+
+/*-------------------------
+CSS変数
+---------------------------*/
+/* color */
+:root {
+  --color-01: #de0012;
+  --color-02: #ffe000;
+}
+
+/*-------------------------
+reset
+---------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  width: 100vw;
+}
+body,
+input,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans CJK jp",
+    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    sans-serif;
+}
+body {
+  background-color: #fff;
+  width: 100vw;
+  color: #000;
+  font-family: YakuHanJP, noto-sans-cjk-jp, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+img,
+a,
+ul,
+li,
+iframe,
+fieldset {
+  border: none;
+  outline: none;
+}
+img {
+  line-height: 0;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:link,
+  &:visited{
+    color: #000;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+figure,
+from,
+iframe,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  @include sp {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.pc{
+    display: block !important;
+    @include is-max(480px){
+        display: none !important;
+    }
+}
+.sp{
+    display: none !important;
+    @include is-max(480px){
+        display: block !important;
+    }
+}

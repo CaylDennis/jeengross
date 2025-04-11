@@ -1,0 +1,641 @@
+.Recruitment {
+    .page_recruitment {
+        .sect_1 {
+            .wrapper {
+                min-height: 1360px;
+                position: relative;
+                .contact_form_logo {
+                    .contact_form {
+                        position: absolute;
+                        right: 34px;
+                        top: 73px;
+                    }
+                }
+                .container {
+                    padding-top: 90px;
+                    .title_recruitment {
+                        text-align: center;
+                        .small {
+                            color: #DA0012;
+                            font-size: 24px;
+                            @include Helvetica (700)
+                        }
+                        h2 {
+                            color: #DA0012;
+                            font-size: 36px;
+                            margin-top: 17px;
+                            @include Gothic (700)
+                        }
+                        .black {
+                            font-size: 36px;
+                            line-height: 51px;
+                            margin: 32px;
+                            position: relative;
+                            top: 70px;
+                            letter-spacing: -6px;
+                            @include Mincho (500)
+                        }
+                    }
+                    .flex {
+                        justify-content: space-evenly;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 88px;
+                        padding-bottom: 37px;
+                        .paragraphs {
+                            line-height: 39px;
+                            transform: rotate(-5deg);
+                            .p__title {
+                                color: #DA0012;
+                                .small {
+                                    font-size: 40px;
+                                }
+                                .big {
+                                    font-size: 80px;
+                                    margin-bottom: 38px;
+                                }
+                                @include Gothic (700) 
+                            }
+                            .p__content {
+                                color: #DA0012;
+                                .p__1 {
+                                    margin-top: 2rem;
+                                    font-size: 16px;
+                                    @include Noto_Sans (700)
+                                }
+                                .p__2 {
+                                    margin-top: 2rem;
+                                    font-size: 16px;
+                                    line-height: 34px;
+                                    @include Noto_Sans (500)
+                                }
+                                .p__3 {
+                                    margin-top: 2rem;
+                                    font-size: 16px;
+                                    line-height: 32px;
+                                    @include Noto_Sans (500)
+                                }
+                                @include Noto_Sans (700)
+                            }
+                        } 
+                        figure {
+                            z-index:-1;
+                            video {
+                                width: 1077px;
+                            }
+                        }
+                        .bear {
+                            position: relative;
+                            z-index: -1;
+                            ._bear {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .sect1__images {
+                    ._trio {
+                        margin-top: -175px;
+                    }
+                }
+            }
+        }
+        .sect_2 {
+            .wrapper {
+                background-color: #de0012;
+                min-height: 916px;
+                .container {
+                    position: relative;
+                    .flex {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        padding-top: 54px;
+                        .container {
+                            background-color: #fff;
+                            width: 440px;
+                            height: 480px;
+                            position: relative;
+                            .center {
+                                margin-top: 60px;
+                                text-align: center;
+                                font-size: 20px;
+                                margin-bottom: 54px;
+                            }
+                            .center1 {
+                                margin-top: 60px;
+                                text-align: center;
+                                font-size: 20px;
+                                margin-bottom: 14px;
+                            }
+                            .jg_logo {
+                                margin-bottom: 57px;
+                            }
+                            .flex_white {
+                                display: flex;
+                                justify-content: space-around;
+                                .concept {
+                                    .txt {
+                                        font-size: 56px;
+                                        color: #DA0012;
+                                        transform: skewY(-10deg);
+                                        position: relative;
+                                        top: 13px;
+                                        @include Delycost (500)
+                                    }
+                                }
+                                .girls {
+                                    position: relative;
+                                    left: 21px;
+                                }
+                            }
+                            .txt_content1 {
+                                font-size: 16px;
+                                line-height: 24px;
+                                @include Noto_Sans (500)
+                            }
+                            .txt_content {
+                                font-size: 16px;
+                                margin-bottom: 35px;
+                                line-height: 24px;
+                                @include Noto_Sans (500)
+                            }
+                            .logo {
+                                .big {
+                                    color: #DA0012;
+                                    font-size: 43px;
+                                    transform: skewY(-10deg);
+                                    position: relative;
+                                    bottom: 20px;
+                                    @include Delycost (500)
+                                }
+                            }
+                            a {
+                                position: absolute;
+                                bottom: 33px;
+                                right: 26px;
+                            }
+                        }
+                        .container:hover {
+                            cursor: pointer;
+                            .girls {
+                                img {
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                        .container2 {
+                            background-color: #fff;
+                            width: 440px;
+                            height: 480px;
+                            position: relative;
+                            max-width: 1240px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-left: 50px;
+                            padding-right: 50px;
+                            margin-bottom: 76px;
+                            .center {
+                                margin-top: 60px;
+                                text-align: center;
+                                font-size: 20px;
+                                margin-bottom: 42px;
+                            }
+                            .center1 {
+                                margin-top: 60px;
+                                text-align: center;
+                                font-size: 20px;
+                                margin-bottom: 14px;
+                            }
+                            .jg_logo {
+                                margin-bottom: 48px;
+                            }
+                            .flex_white {
+                                display: flex;
+                                justify-content: space-around;
+                                .concept {
+                                    .txt {
+                                        font-size: 56px;
+                                        color: #DA0012;
+                                        transform: skewY(-10deg);
+                                        position: relative;
+                                        top: 42px;
+                                        @include Delycost (500)
+                                    }
+                                }
+                                .girls {
+                                    position: relative;
+                                    left: 21px;
+                                }
+                            }
+                            .txt_content {
+                                font-size: 16px;
+                                margin-bottom: 35px;
+                                line-height: 24px;
+                                @include Noto_Sans (500)
+                            }
+                            .logo {
+                                .big {
+                                    color: #DA0012;
+                                    font-size: 43px;
+                                    transform: skewY(-10deg);
+                                    position: relative;
+                                    bottom: 20px;
+                                    @include Delycost (500)
+                                }
+                            }
+                            a {
+                                position: absolute;
+                                bottom: 33px;
+                                right: 26px;
+                            }
+                        }
+                        .container2:hover {
+                            cursor: pointer;
+                            .jg_logo {
+                                img {
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+        .sect_3 {
+            .wrapper {
+                background-color: #FFDC00;
+                min-height: 2170px;
+                .container {
+                    .sect3_title {
+                        text-align: center;
+                        padding-top: 145px;
+                        .small {
+                            font-size: 20px;
+                            @include Gothic (500)
+                        }
+                        .big {
+                            font-size: 120px;
+                            span {
+                                -webkit-text-fill-color: transparent;
+                                -webkit-text-stroke: 1px #000;
+                            }
+                            @include Helvetica (700)
+                        }
+                        .withline_txt {
+                            .black {
+                                font-size: 36px;
+                                padding: 41px;
+
+                                @include Mincho (700)
+                            }
+                        }
+                    }
+                    .white_flex {
+                        padding-top: 3px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        .whitebox {
+                            display: flex;
+                            background-color: #fff;
+                            width: 47%;
+                            position: relative;
+                            border: 1px solid #000;
+                            margin-top: 33px;
+                            padding: 30px;
+                                .flex_content {
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    figure {
+                                        width: 37%;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    .txt_content {
+                                        width: 63%;
+                                        .red {
+                                            margin-top: 10px;
+                                            color: #DA0012;
+                                            font-size: 16px;
+                                        }
+                                        .black {
+                                            font-size: 18px;
+                                            margin-top: 22px;
+                                            margin-bottom: 70px;
+                                        }
+                                    }
+                                }
+                                a {
+                                    position: absolute;
+                                    bottom: 6%;
+                                    right: 3%;
+                                }
+                        }
+                        .whitebox:hover {
+                            background-color: black;
+                            cursor: pointer;
+                            .black {
+                                color: #fff;
+                            }
+                            .red {
+                                color: #fff !important; 
+                            }
+                        }
+                    }
+                }
+                #contentsBottomOuter {
+                    #contentsBottom {
+                        ul {
+
+                            li {
+                                a {
+                                    background-color: white;
+                                    dl:hover {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contents-outer {
+            #otherService {
+                padding-bottom: 140px;
+            }
+        }
+    }
+}
+@media (max-width:400px) {
+
+}
+@media (max-width: 425px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .anchor-circle-inner figure figcaption {
+        font-size: 3.991vw;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .anchor-circle-inner  {
+        padding: 10px;
+     }
+     .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox {
+        padding: 10px;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs .p__title {
+        width: 104%;
+    }
+}
+
+@media (max-width:527px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .anchor-circle-inner  {
+        right: -4%;
+        bottom: 0%;
+    }
+}
+@media (max-width:368px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .anchor-circle-inner svg {
+        margin-left: 5px;
+    }
+}
+@media (max-width:779px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .sect1__images_sp .bear .trio ._trio {
+        position: relative;
+    }
+}
+@media (min-width:780px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .sect1__images_sp {
+        visibility: hidden;
+      }  
+}
+@media (min-width:1106px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .sect1__images ._trio {
+        position: relative;
+        left: 50%;
+    }
+}
+@media (min-width:1050px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .sect1__images ._trio {
+        position: absolute;
+        left: 58%;
+        bottom: 0;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs {
+        position: relative;
+        top: 118px;
+        left: 120px;
+    }
+}
+@media (max-width:1049px){
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs .p__title .big {
+        margin-top: 51px;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .sect1__images {
+      display: flex;
+      justify-content: center;
+    } 
+    .Recruitment .page_recruitment .sect_1 .wrapper .contact_form_logo .contact_form {
+        visibility: hidden;
+    }
+}
+@media (max-width:925px) {
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .sect2_title .big {
+        font-size: 12.973vw;
+    }
+}
+@media (max-width: 390px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs .p__title .big {
+        font-size: 20.513vw;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs {
+        line-height: 45px;
+        width: 95%;
+    }
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .sect2_title {
+        padding-top: 83px;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs .p__title .big {
+        line-height: 70px;
+    }
+}
+@media (max-width:502px) {
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container .flex_white .concept .txt {
+        font-size: 11.155vw;
+    }
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container .logo .big {
+        font-size: 8.566vw;
+    }
+}
+@media (max-width:310px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex .paragraphs {
+        width: 90%;
+    }
+}
+@media (max-width:1030px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .big {
+        font-size: 11.650vw;
+    }
+}
+@media (max-width:979px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title {
+        padding-top: 100px;
+    }
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container2 .jg_logo {
+        margin-bottom: 30px;
+    }
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container2 {
+        margin-top: 60px;
+    }
+}
+@media (max-width:899px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title {
+        padding-top: 60px;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .big {
+        margin-top: 20px;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox {
+    margin-top: 18px;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex {
+        padding-top: 32px;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .withline_txt .black {
+        padding: 35px;
+        font-size: 4.004vw;
+    }
+}
+@media (min-width:900px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .withline_txt .black {
+        margin-top: 18px;
+    }
+}
+@media (max-width:999px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content {
+        flex-wrap: wrap;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content .txt_content .red {
+        margin-top: 20px;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content .txt_content .black {
+        margin-top: 16px;
+        
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox a {
+        right: 0%;
+        bottom: 0%;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content figure {
+        width: 100%;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content .txt_content {
+        width: 100%;
+    }
+}
+@media (min-width:1000px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content {
+        display: flex;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox .flex_content .txt_content {
+        padding-left: 27px;
+    }
+}
+@media (max-width:768px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .white_flex .whitebox a p {
+        font-size: 1.953vw;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container {
+        padding-top: 93px;
+    }  
+}
+@media (min-width:1025px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex figure {
+        position: relative;
+        width: 50%;
+        right: 267px;
+        top: 47px;
+    }
+}
+@media (max-width:1024px) {
+    .Recruitment .page_recruitment .sect_1 .wrapper .sect1__images ._trio {
+        max-width: 80%;
+        position: relative;
+        bottom: -8px;
+    } 
+}
+@media (max-width:527px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .big {
+        font-size: 21.770vw;
+    }
+}
+@media (max-width:370px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .big {
+        font-size: 10.65vw;
+    }
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .withline_txt .black {
+        font-size: 6.486vw;
+    }
+}
+@media (max-width:375px) {
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container2 {
+        margin-top: 20px;
+    }
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex .container2 {
+        margin-bottom: 35px;
+    }
+    .Recruitment .page_recruitment .sect_1 .wrapper .container .flex figure video {
+        width: 826px;
+    }
+}
+@media (max-width:399px) {
+    .Recruitment .page_recruitment .sect_3 .wrapper .container .sect3_title .big {
+        font-size: 10.65vw;
+    }
+}
+@media (max-width:640px) {
+    .Recruitment .page_recruitment .sect_2 .wrapper .container .flex {
+        margin-top: 55px;
+    }
+}
+
+@keyframes titleFill {
+	from {
+		fill: rgba(222,0,18,0);
+	}
+	to {
+		fill: rgba(222,0,18,1);
+	}
+}
+@keyframes titleFillw {
+	from {
+		fill: rgba(255,255,255,0);
+	}
+	to {
+		fill: rgba(255,255,255,1);
+	}
+}
+.top header figure video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#mainvisual {
+    -webkit-mask-image:url(../images/recruitment/1x/mask.png);
+    mask-image:url(../images/recruitment/1x/mask.png);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 45% auto;
+}
+
+
+ 

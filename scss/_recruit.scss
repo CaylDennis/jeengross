@@ -1,0 +1,196 @@
+#Recruit {
+    #wrapper {
+        .page_recruit {
+            .sect_1 {
+                .wrapper {
+                    min-height: 462px;
+                    margin-top: 181px;
+                    .container {
+                        position: relative;
+                        .sect1_title {
+                            text-align: center;
+                            color: #DA0012;
+                                .small {
+                                    font-size: 24px;
+                                    @include Helvetica (700)
+                                }
+                                h2 {
+                                    margin-top: 28px;
+                                    font-size: 36px;
+                                    @include Gothic (700)
+                                }
+                        }  
+                        .flex {
+                            border-bottom: 1px solid #DC0012;
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            padding-bottom: 3px;
+                            .paragraph1 {
+                                width: 30%;
+                                .red {
+                                    color: #DC0012;
+                                    font-size: 22px;
+                                    margin-top: 111px;
+                                    font-weight: 500;
+                                    margin-bottom: 30px;
+                                }
+                                .black {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+                            .imgflex {
+                                width: 24%;
+                                position: relative;
+                            }
+                            .paragraph2 {
+                                width: 30%;
+                                .red {
+                                    color: #DC0012;
+                                    font-size: 22px;
+                                    margin-top: 111px;
+                                    font-weight: 500;
+                                    margin-bottom: 30px;
+                                }
+                                .black {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+            .sect_2 {
+                .wrapper {
+                    min-height: 566px;
+                    position: relative;
+                    .container {
+                        .sect2_title {
+                            text-align: center;
+                            color: #DA0012;
+                                .small {
+                                    font-size: 24px;
+                                    padding-top: 150px;
+                                    @include Helvetica (700)
+                                }
+                        }
+                        .sect2_content {
+                            margin-top: 40px;
+                            .sect2_txt {
+                                margin: 60px auto 0;
+                                font-weight: 500;
+                                max-width: 600px;
+                            }
+                        }  
+                    }
+                }
+            }
+            .sect_3 {
+                .wrapper {
+                    position: relative;
+                    .container {
+                        .sect3_title {
+                            text-align: center;
+                            color: #DA0012;
+                                .small {
+                                    font-size: 20px;
+                                    padding-top: 150px;
+                                    @include Helvetica (700)
+                                }
+                        }
+                        .flex {
+                            display: flex;
+                            justify-content: space-evenly;
+                            flex-wrap: wrap;
+                            margin-bottom: 90px;
+                                .imgflex3 {
+                                    padding: 25px;
+                                }
+                                .pflex {
+                                    width: 100%;
+                                    .red {
+                                        color: #DC0012;
+                                        margin: 30px 0;
+                                        font-weight: 700;
+                                    }
+                                    .black {
+                                        font-weight: 500;
+                                    }
+                                }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:770px) {
+    #Recruit #wrapper .page_recruit .sect_3 .wrapper .container .flex .wrapper {
+        width: 180px;
+    }
+    
+}
+@media (min-width:946px) {
+    .size {
+        width: 32%;
+        margin: 0 auto;
+    }
+}
+@media (max-width:425px) {
+    #Recruit #wrapper .page_recruit .sect_3 .wrapper .container .sect3_title .small {
+        padding-top: 80px;
+    }
+    #Recruit #wrapper .page_recruit .sect_3 .wrapper .container .flex .wrapper {
+        display: flex;
+    }
+    #Recruit #wrapper .page_recruit .sect_3 .wrapper .container .flex .pflex {
+        width: 150%;
+    }
+    #Recruit #wrapper .page_recruit .sect_3 .wrapper .container .flex {
+        margin-top: 67px;
+    }
+    .top {
+        top: 60px !important;
+    }   
+}
+.steps {
+    margin-top: 50px;
+}
+@media (max-width:630px) { 
+    #Recruit #wrapper .page_recruit .sect_2 .wrapper .container .sect2_title .small {
+        padding-top: 80px;
+    }
+
+}
+@media (max-width:1022px) {
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .imgflex img{
+        transform: rotate(90deg);
+        width: 100%;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex {
+        flex-direction: column;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .paragraph1 {
+        width: 100%;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .paragraph2 {
+        width: 100%;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .imgflex {
+        width: 66%;
+        top: -44px;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .paragraph2 .red {
+        margin-top: -123px;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper {
+        margin-top: 118px;
+    }
+    #Recruit #wrapper .page_recruit .sect_1 .wrapper .container .flex .paragraph1 .red {
+        margin-top: 76px;
+    }
+
+}

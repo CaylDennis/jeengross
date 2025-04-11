@@ -1,0 +1,339 @@
+.Consulting {
+    text-align: justify;
+    .page_consulting {
+        .sect_1 {
+            .wrapper {
+                position: relative;
+                min-height: 640px;
+                width: 100%;
+                .contact_form {
+                    position: absolute;
+                    max-width: 9.202vw;
+                    right: 2.5%;
+                    top: 8%;
+                }
+                .container {
+                    padding-top: 1px;
+                    .text_center {
+                        margin: auto;
+                        text-align: center;
+                        p {
+                            margin: 0 auto;
+                            padding-top: 10px;
+                            color: #D90012;
+                            margin: 56px 0 31px 0;
+                            font-size: 24px;
+                            @include Helvetica (700)
+                        }
+                        h2 {
+                            font-size: 36px;
+                            color: #D90012;
+                            letter-spacing: -3px;
+                            @include Gothic (700)
+                        }
+                    }
+                }
+                .flex {
+                    width: 100%;
+                    .text_flex {
+                        margin-left: 24px;
+                        text-align: justify;
+                        .p_black {
+                            line-height: 27px;
+                            width: 25.571vw;
+                        }
+                        .p__red {
+                            color: #D90012;
+                            margin-top: 66px;
+                            margin-bottom: 22px;
+                            font-size: 22px;
+                            letter-spacing: -1.5px;
+                            line-height: 29px;
+                        }
+                    }
+                }
+                .image_flex {
+                    .girls {
+                        bottom: -1px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+        .sect_2 {
+            .wrapper {
+                width: 100%;
+                min-height: 680px;
+                background-color: #D90012;
+                position: relative;
+                .container {
+                    margin: auto;
+                    .center_title {
+                        text-align: center;
+                        .small {
+                        padding-top: 98px;
+                        font-size: 20px;
+                        color: #fff;
+                        @include Gothic (500)
+                        }
+                        h2 {
+                        margin-top: 1rem;
+                        font-size: 120px;
+                        color: #fff;
+                            span {
+                                -webkit-text-fill-color: transparent;
+                                -webkit-text-stroke: 1px #fff;
+                            }
+                        @include Helvetica (700)
+                        }
+                    }
+                    .flex {
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-top: 180px;
+                        flex-wrap: wrap;
+                        .text_flex {
+                            text-align: justify;
+                            width: 45%;
+                            color: #fff;
+                            .big {
+                                padding-top: 11px;
+                                font-size: 22px;
+                                line-height: 1.8rem;
+                                @include Noto_Sans (700)
+                            }
+                            .small {
+                                margin-top: 24px;
+                                font-size: 16px;
+                                line-height: 26px;
+                                @include Noto_Sans (500)
+                            }
+                        }
+                        .white_stroke {
+                            position: relative;
+                            border: 1px solid #fff;
+                            max-height: 260px;
+                            max-width: 260px;
+                            padding: 2rem 26px;
+                            .box {
+                                .big {
+                                    width: 100%;
+                                    text-align: center;
+                                    color:#fff;
+                                    font-size: 64px;
+                                    line-height: 59px;
+                                    margin-top: 16px;
+                                    letter-spacing: -2px;
+                                    margin-bottom: 13px;
+                                    @include DINCondenced (700) 
+                                }
+                            }
+                        }
+                        .white_stroke_2 {
+                            position: relative;
+                            border: 1px solid #fff;
+                            max-height: 260px;
+                            max-width: 260px;
+                           .box2 {
+                               .why {
+                                padding: 44px 2rem 14px 2rem;
+                               }
+                           }    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1216px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .text_flex {
+        width: 100%;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex {
+        padding-bottom: 3rem;
+    }
+}
+@media (max-width:900px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex {
+        padding-top: 30px;
+    }
+}
+@media (min-width:901px) {
+.Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p_blac {
+    padding-bottom: 40px;
+    }
+}
+@media (max-width:1215px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke {
+        margin-top: 3rem;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke_2 {
+        margin-top: 3rem;
+    }
+}
+@media (min-width:1441px) {
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex p {
+        min-width: 60%;
+    }
+}
+@media (max-width:390px) {
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex p {
+        display: flex;
+    }
+}
+@media (min-width:1300px) {
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p__red {
+        margin-top: 102px;
+    }
+}
+@media (max-width:768px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .center_title h2 {
+        font-size: 15.625vw;
+        letter-spacing: 5px;
+    }
+}
+@media (max-width:580px) {
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex p {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:900px) {
+    .Consulting .page_consulting .sect_1 .wrapper .image_flex .girls {
+        position: absolute;
+        max-width: 68%;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .flex {
+        display: flex;
+    }
+    // .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p_black {
+    //     width: 28.571vw; 
+    // }
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p__red {
+        width: 371px;
+    }
+    
+}
+@media (min-width:1225px) {
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p_black {
+        width: 28.571vw; 
+    }
+}
+@media (max-width:375px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke {
+        max-width: 150px;
+        max-height: 150px;
+        padding: 1rem 1.5rem;    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke_2 {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke .box .big {
+        font-size: 37px;
+        line-height: 30px;
+        padding-top: 0px;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .container .text_center h2 {
+        line-height: 44px;
+        letter-spacing: 0px;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p__red {
+        width: 77%;
+        text-align: left;
+        margin-left: 0;
+        line-height: 30px;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .text_flex .big {
+        padding: 0px;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .text_flex .small {
+        line-height: 28px;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke {
+        margin-top: 2rem;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke_2 {
+        margin-top: 2rem;
+    }
+    .p11 {
+        font-size: 11px !important;
+    }
+    .adjust {
+        top: -10px;
+        width: 130%;
+        left: -6%;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .white_stroke_2 .box2 .why {
+        padding: 31px 2rem 14px 2rem;
+    }
+    .spv {
+        padding: 17px !important;
+        
+    }
+    
+}
+@media (max-width:899px) {
+    .Consulting .page_consulting .sect_1 .wrapper .contact_form {
+        visibility: hidden;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex p  {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Consulting .page_consulting .sect_2 .wrapper .container .center_title .small {
+        padding-top: 60px;
+        line-height: 26px;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .flex .text_flex .p_black {
+        width: 100%;
+    }
+}
+@media (max-width:900px) {
+    .Consulting .page_consulting .sect_2 .wrapper .container .flex .text_flex .big {
+        padding-top: 180px;
+    }
+    .Consulting .page_consulting .sect_1 .wrapper .image_flex .girls {
+        position: relative;
+        bottom: -2px;
+    }
+}
+.title-white {
+    width: 100%;
+    position: absolute;
+    top: 152px;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    ul {
+        display: flex;
+        svg {
+            stroke-miterlimit: 10;
+            stroke-dasharray: 670px;
+            stroke-dashoffset: 670px;
+            height: 92px;
+        }
+    }
+    &.animated {
+        ul {
+            li {
+                animation: titleSlides 20s linear 1.5s infinite;
+                margin: 0 25px;
+            }
+        }
+       
+    }
+}
+.pad10 {
+    padding: 10px;
+}
+.font20 {
+    font-size: 15px;
+}
+.trans-w {
+    background-color: transparent !important;
+    color: white !important;
+}
+.marg_0 {
+    margin:0 !important;
+}

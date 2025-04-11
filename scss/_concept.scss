@@ -1,0 +1,304 @@
+.concept{
+  .contents-outer{
+    #otherService{
+      padding-top: 83px;
+      dd{
+        margin-top: 10px;
+      }
+      .anchor-circle-inner{
+        padding-top: 54px;
+        padding-bottom: 40px;
+        & > figure{
+          margin-top: 4px;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+  .title{
+    top: 134px;
+  }
+  #contentsBottom{
+    padding-top: 69px;
+  }
+  .sns-button{
+    margin-bottom: 100px;
+  }
+}
+.page_concept {
+  padding: 103px 0;
+  text-align: center;
+  @include sp {
+    padding: 90px 0;
+  }
+  .ttl {
+    &__main {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $font-color-red;
+      line-height: 1;
+      padding-bottom: 23px;
+      @include Helvetica(700);
+    }
+    span {
+      font-size: 36px;
+      color: $font-color-red;
+      letter-spacing: -3px;
+      @include Gothic(700);
+    }
+  }
+  .main_img {
+    width: 80%;
+    margin: 40px auto 0 auto;
+    display: block;
+    @include sp {
+      width: 100%;
+      margin: 30px 0 0 0;
+    }
+    @include pc {
+      width: 80%;
+    }
+  }
+  h1 {
+    font-size: 80px;
+    color: $font-color-red;
+    padding-top: 35px;
+    letter-spacing: -18px;
+    @include Mincho(400);
+    @include mq() {
+      font-size: 9vw;
+    }
+    @include sp {
+      font-size: 11vw;
+      letter-spacing: -9px;
+      padding-top: 43px;
+    }
+    span {
+      letter-spacing: 2px;
+      margin-right: 10px;
+    }
+  }
+  .desc {
+    font-size: 16px;
+    color: $font-color-default;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 29px;
+    @include Noto_Sans(500);
+    @include sp {
+      padding-top: 45px;
+    }
+  }
+
+  .sect_1 {
+    background-color: #dc0012;
+    padding: 90px 0 91px;
+    margin-top: 60px;
+    @include sp {
+      margin-top: 65px;
+      padding: 80px 0 35px;
+    }
+    &__col {
+      display: flex;
+      justify-content: space-between;
+      @include sp {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .slick-prev {
+        display: none !important;
+      }
+      .slick-next {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: $font-color-white !important;
+        font-size: 20px;
+        font-style: italic;
+        text-transform: uppercase;
+        justify-content: flex-end;
+        width: 100%;
+        @include TwCen(700);
+        padding: 0;
+        img {
+          width: 40px;
+          margin-left: 10px;
+        }
+      }
+      .row {
+        width: 340px;
+        margin-right: 30px;
+        @include sp {
+          width: 100%;
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+          .row {
+            &--ttl {
+              p {
+                font-size: 22px;
+              }
+              &__desc {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+        img {
+          width: 160px;
+          margin: 0 auto;
+          display: block;
+        }
+        &--ttl {
+          p {
+            color: $font-color-white;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 50px 0 5px 0;
+            letter-spacing: -1px;
+            @include is-max(480px) {
+              padding: 45px 0 5px 0;
+            }
+            @include mq(xs) {
+              font-size: 4.9vw;
+            }
+            span {
+              font-size: 30px;
+              line-height: 1;
+              @include is-max(480px) {
+                font-size: 7.5vw;
+              }
+            }
+          }
+          &__desc {
+            font-size: 30px;
+            font-weight: 700;
+            color: $font-color-white;
+            text-align: justify;
+            letter-spacing: -2px;
+            line-height: 1;
+          }
+        }
+        &--desc {
+          color: $font-color-white;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: left;
+          padding-top: 25px;
+          letter-spacing: -1px;
+          text-align: justify;
+          line-height: 26px;
+          @include sp {
+            padding-bottom: 25px;
+            // letter-spacing: -1.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .sect_2 {
+    &__col {
+      padding: 124px 0 95px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1005px;
+      margin-left: auto;
+      background: url("../images/concept/sect_2_img-1.png");
+      background-size: 63%;
+      background-position: right 64%;
+      background-repeat: no-repeat;
+      @include mq(900px) {
+        background-position: right 20%;
+      }
+      @include sp {
+        background-size: 100%;
+        background-position: center 52%;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        max-width: 484px;
+        @include mq() {
+          max-width: 100%;
+        }
+        .vertical_txt {
+          @include sp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 620px;
+          }
+        }
+        &__ttl {
+          color: $font-color-default;
+          font-size: 80px;
+          text-align: left;
+          line-height: 1;
+          padding-bottom: 30px;
+          font-feature-settings: "palt";
+          @include Mincho(400);
+          @include sp {
+            writing-mode: vertical-rl;
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            line-height: 1.3em;
+            letter-spacing: -1.5px;
+          }
+          @include is-max(340px) {
+            font-size: 23vw;
+            line-height: 1.2em;
+          }
+          span {
+            letter-spacing: -20px;
+            padding: 25px 0;
+            text-indent: -60px;
+            display: inline-block;
+            @include sp {
+              padding: 0;
+              text-indent: -75px;
+              letter-spacing: -10px;
+            }
+          }
+        }
+        &__desc {
+          color: $font-color-default;
+          font-size: 16px;
+          text-align: justify;
+          padding-top: 23px;
+          line-height: 26.4px;
+          letter-spacing: -0.5px;
+          @include Noto_Sans(500);
+          @include sp {
+            padding-top: 0;
+            letter-spacing: -1px;
+            line-height: 26px;
+            margin-top: 145px;
+          }
+        }
+      }
+    }
+    &__our_works {
+      border: 1px solid #dc0012;
+      background-color: transparent;
+      width: 480px;
+      @include sp {
+        width: 100%;
+        margin-top: 55px;
+      }
+      a {
+        color: $font-color-red;
+        font-style: italic;
+        font-size: 38px;
+        padding: 24px 0;
+        display: block;
+        @include TwCen(700);
+        letter-spacing: -1px;
+        line-height: 1;
+      }
+    }
+  }
+}

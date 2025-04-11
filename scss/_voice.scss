@@ -1,0 +1,234 @@
+.voice{
+  .contents-outer{
+    #otherService{
+      padding-top: 89px;
+      dd{
+        margin-top: 10px;
+      }
+      .anchor-circle-inner{
+        padding-top: 54px;
+        padding-bottom: 40px;
+        & > figure{
+          margin-top: 4px;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+  .title{
+    top: 140px;
+  }
+  #contentsBottom{
+    padding-top: 69px;
+  }
+  .sns-button{
+    margin-bottom: 100px;
+  }
+}
+.page_voice {
+  padding: 100px 0 0 0;
+  .ttl {
+    text-align: center;
+    &__main {
+      color: $font-color-red;
+      font-size: 24px;
+      letter-spacing: 0px;
+      @include Helvetica(700);
+    }
+    &__sub {
+      color: $font-color-red;
+      font-size: 36px;
+      padding-top: 21px;
+      letter-spacing: 0px;
+      @include Gothic(700);
+    }
+    &__desc {
+      font-size: 16px;
+      text-align: left;
+      max-width: 540px;
+      margin: 0 auto;
+      padding-top: 102px;
+      letter-spacing: -1.105px;
+      line-height: 26.4px;
+      @include Noto_Sans(500);
+      @include is-max(480px) {
+        padding-top: 63px;
+      }
+    }
+  }
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1090px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 70px;
+    @include is-max(480px) {
+      padding-top: 45px;
+    }
+    &__row-1{
+      width: 49%;
+      @include is-max(480px){
+        width: 100%;
+      }
+    }
+    &__row-2{
+      width: 49%;
+      @include is-max(480px){
+        width: 100%;
+      }
+    }
+    &__row {
+      width: 100%;
+      position: relative;
+      &:not(:first-child),
+      &:not(:nth-child(2)) {
+        margin-bottom: 51px;
+        @include is-max(640px) {
+          margin-bottom: 50px;
+        }
+      }
+      .square {
+        width: 30px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        @include is-max(480px) {
+          transform: translate(-50%, 0%);
+        }
+        @include mq(md){
+          bottom: -15.5px;
+        }
+        @include is-max(380px){
+          bottom: -15px;
+        }
+        img{
+          margin-bottom: 0;
+          width: 100%;
+          display: block;
+        }
+      }
+      @include sp {
+        width: 100%;
+      }
+    }
+    &__col {
+      border: 2px solid #de0012;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 57px 45px 55px 57px;
+      @include is-max(1000px){
+        padding: 30px 30px 55px 30px;
+      }
+      @include sp{
+        flex-wrap: wrap;
+      }
+      @include is-max(480px) {
+        padding: 57px 35px 81px 35px;
+      }
+      @include is-max(380px){
+        padding: 57px 35px 51px 35px;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      &--image {
+        width: 140px;
+        @include sp{
+          width: 100%;
+        }
+        img {
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+        }
+        @include is-max(480px) {
+          width: 100%;
+
+        }
+      }
+      &--text {
+        width: calc(100% - 140px);
+        padding-left: 40px;
+        @include is-max(1025px){
+          padding-left: 30px;
+        }
+        @include sp{
+          width: 100%;
+          padding-left: 0;
+          padding-top: 20px;
+        }
+        @include is-max(480px) {
+          width: 100%;
+          padding-left: 0;
+          padding-top: 0;
+        }
+        &__ttl {
+          font-size: 22px;
+          line-height: normal;
+          @include Noto_Sans(700);
+          @include is-max(480px) {
+            padding-top: 24px;
+          }
+        }
+        &__desc {
+          color: $font-color-red;
+          font-size: 16px;
+          padding-top: 18px;
+          line-height: 26.4px;
+          letter-spacing: -1px;
+          @include Noto_Sans(500);
+        }
+      }
+      .absolute {
+        position: absolute;
+        width: 30px;
+        height: auto;
+        bottom: 15%;
+        right: 8.2%;
+        cursor: pointer;
+        transition: .10s ease-in-out;
+        @include sp{
+          bottom: 35px;
+        }
+        @include is-max(480px) {
+          bottom: 5.5%;
+          right: 12%;
+        }
+        img{
+          transition: .10s ease-in-out;
+        }
+      }
+    }
+    &__content {
+      background-color: #de0012;
+      padding: 45px 32px 47px 58px;
+      display: none;
+      @include is-max(480px) {
+        padding: 45px 35px 47px 35px;
+      }
+      p {
+        color: $font-color-white;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: 0px;
+        @include Noto_Sans(400);
+        @include is-max(480px) {
+          line-height: 23.1px;
+        }
+      }
+      &.isActive {
+        display: block;
+      }
+    }
+  }
+
+  .contents-outer{
+    margin-top: 70px;
+
+    .title{
+      top: 189px;
+    }
+  }
+}

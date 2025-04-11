@@ -1,0 +1,98 @@
+$pc: 900px; // PC
+$sp: 899px; // スマホ
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+// @include is-max()
+@mixin is-max($is-max) {
+  @media only screen and (max-width: $is-max) {
+    @content;
+  }
+}
+
+// @include is-min()
+@mixin is-min($is-min) {
+  @media only screen and (min-width: $is-min) {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: md, $range: max) {
+  @media (#{$range}-width:#{map-get($breakpoints,$breakpoint)}) {
+    @content;
+  }
+}
+//@include mq(){}
+//で使えます。空の場合はmdで判断。
+//ブレイクポイントは必要な分だけ使ってください。1か所の場合はmdだけ残して数値を変えてください。
+$breakpoints: (
+  xs: 320px,
+  sm: 375px,
+  md: 800px,
+  lg: 1200px,
+  xl: 1500px,
+);
+
+// color: $font-color;
+$font-color-default: #000;
+$font-color-red: #de0012;
+$font-color-white: #fff;
+$font-color-yellow: #ffe000;
+
+//custom font downloaded
+@font-face {
+  font-family: "tw_cen";
+  src: url(/fonts/TwCenMTStd-Bold.otf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "delycost";
+  src: url(/fonts/delycost-regular.ttf);
+  font-style: normal;
+}
+// light  @include Noto_Sans(300);
+// medium @include Noto_Sans(500);
+@mixin Noto_Sans($weight: 500) {
+  font-family: YakuHanJP, noto-sans-cjk-jp, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin Gothic($weight: 500) {
+  font-family: "Yu gothic", "cross-platform-yu-gothic", "MS PGothic", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin Mincho($weight: 500) {
+  font-family: YakuHanJP, "A1明朝";
+  font-weight: $weight;
+}
+
+@mixin Helvetica($weight: 500) {
+  font-family: "Helvetica", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin DINCondenced($weight: 500) {
+  font-family: din-condensed, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin TwCen($weight: 500) {
+  font-family: "tw_cen";
+  font-weight: $weight;
+}
+
+@mixin Delycost($weight: 400) {
+  font-family: "delycost";
+  font-weight: $weight;
+}

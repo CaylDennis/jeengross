@@ -1,0 +1,162 @@
+.pastworks {
+    .wrapper {
+        .container {
+            .wrapper {
+                margin: 40px 0;
+                .check_flex {
+                    display: flex;
+                    align-items: center;
+                    .check_title {
+                        min-width: 85px;
+                        font-weight: 700;
+                    }
+                    .checkbox {
+                        padding: 10px;
+                        border-left: 1px solid #DE0012;
+                        .check_ul {
+                            .check_content {
+                                .check_wrap {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .check_flex2 {
+                    display: flex;
+                    align-items: center;
+                    .check_title {
+                        min-width: 82px;
+                        font-weight: 700;
+                    }
+                    .checkbox {
+                        padding: 10px;
+                        border-left: 1px solid #DE0012;
+                        .check_ul {
+                            position: relative;
+                            .check_content {
+                                .check_wrap {
+                                    margin-bottom: 20px;
+                                }
+                                .check_wrap1 {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .wrapper_col {
+                padding-bottom: 84px;
+                padding-top: 49px;
+                .tagname {
+                    display: flex;
+                    justify-content: center;
+                    .column {
+                        width: 72%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+.margt0 {
+    margin-top: 0 !important;
+}
+@media (max-width:768px) {
+    .pastworks .wrapper .container .wrapper .check_flex .checkbox .check_ul .check_content .check_wrap {
+        display: block;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex2 .checkbox .check_ul .check_content .check_wrap {
+        display: block;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex2 .checkbox .check_ul .check_content .check_wrap1 {
+        position: absolute;
+        right: -123px;
+        top: 44px;
+     }
+     .pastworks .wrapper .container .wrapper .check_flex2 .checkbox .check_ul .check_content .check_wrap01 {
+         position: absolute;
+         right: -82px;
+         top: 87px;
+      }
+}
+@media (min-width:769px) {
+    .pastworks .wrapper .container .wrapper .check_flex {
+        justify-content: center;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex2 {
+        justify-content: center;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex2 {
+        margin-left: -177px;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex .check_title {
+        padding: 0 20px;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex2 .check_title {
+        padding: 0px 26px;
+    }
+    .pastworks .wrapper .container .wrapper .check_flex .checkbox .check_ul .check_content .check_wrap {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width:426px) {
+    .pastworks .wrapper .container .wrapper .check_flex .checkbox .check_ul .check_content .check_wrap {
+        margin-right: 22px;
+    }
+}
+label {
+    position: relative;
+    input {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top:3px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #e7e6e6;
+        position: absolute;
+        top: 2px;
+        left: -23.5px;
+        z-index: 5;
+        border-radius: 5px;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 7px;
+        position: absolute;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+        top: 7px;
+        left: -19.5px;
+        z-index: 5;
+        transform: rotate(-50deg);
+        opacity: 0;
+    }
+}
+// input[type=checkbox] {
+//     display: none;
+// }
+// input[type=checkbox] + label
+input[type="checkbox"]{
+    &:checked {
+        opacity: 0;
+        + label{
+            &::before {
+                background-color: #DE0012;
+                color: #fff;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
